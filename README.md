@@ -1,6 +1,7 @@
 # GTK Quick Resolve
-This application creates a GTK tray icon to quickly run scripts in Ubuntu. 
-The tray icon and menu looks like this:
+This application creates a GTK tray icon to quickly run scripts in Ubuntu.   
+
+The tray icon and menu looks like this:    
 ![Example Image](https://i.imgur.com/zxN6SL2.png)
 
 ## Running on Startup
