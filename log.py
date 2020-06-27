@@ -2,7 +2,7 @@ import logging
 import logging.handlers
 
 LOGGER_GUID = "6286f8b6-278a-4048-ae6d-94acf7f0b439"
-LOG_LOCATION = "/var/log/gtk-quick-resolve.log"
+LOG_LOCATION = "/dev/log"
 
 sys_logger = logging.getLogger(LOGGER_GUID)
 sys_logger.setLevel(logging.INFO)
