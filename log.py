@@ -16,5 +16,8 @@ def debug(message):
 def info(message):
   sys_logger.info(message)
 
+def warning(message):
+  sys_logger.warning(message)
+
 def error(message):
   sys_logger.error(message)
