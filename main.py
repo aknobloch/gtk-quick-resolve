@@ -11,6 +11,7 @@ gi.require_version("AppIndicator3", "0.1")
 from gi.repository import Gtk, AppIndicator3, GLib
 
 HEADPHONE_MAC_ADDRESS = "38:18:4C:49:2E:24"
+BLUETOOTH_SCAN_TIME_SECONDS = 5
 
 class QuickResolve():
 
@@ -33,7 +34,7 @@ class QuickResolve():
 
     fix_headphones_option = Gtk.MenuItem(label="Fix Headphones")
     fix_headphones_script = functools.partial(bluetooth_tools.fix_device,
-      HEADPHONE_MAC_ADDRESS)
+      HEADPHONE_MAC_ADDRESS, BLUETOOTH_SCAN_TIME_SECONDS)
     fix_headphones_option.connect("activate", 
       functools.partial(self.bootstrap_script, fix_headphones_script))
     self.menu.append(fix_headphones_option)
