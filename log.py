@@ -11,13 +11,17 @@ handler = logging.handlers.SysLogHandler(address=LOG_LOCATION)
 sys_logger.addHandler(handler)
 
 def debug(message):
+  print(message)
   sys_logger.debug(message)
 
 def info(message):
+  print(message)
   sys_logger.info(message)
 
 def warning(message):
+  print(message)
   sys_logger.warning(message)
 
 def error(message):
+  print(message)
   sys_logger.error(message)
